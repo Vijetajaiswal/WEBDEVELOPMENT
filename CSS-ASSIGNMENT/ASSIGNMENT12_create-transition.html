@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .circles {
+            display: flex;
+            align-items: center;
+        }
+        .circle-1 {
+            width: 20px;
+            height: 20px;
+            background-color: #2196F3;
+            border-radius: 50%;
+            margin-right: 10px;
+            opacity: 0.2;
+            transition: all 0.5s ease;
+        }
+        .circle-1:nth-child(2) {
+            width: 30px;
+            height: 30px;
+        }
+        .circle-1:nth-child(3) {
+            width: 40px;
+            height: 40px;
+        }
+        .circle-1:nth-child(4) {
+            width: 50px;
+            height: 50px;
+        }
+        .circle-1:nth-child(5) {
+            width: 60px;
+            height: 60px;
+        }
+        .circle-1:nth-child(6) {
+            width: 70px;
+            height: 70px;
+        }
+        .circle-1:nth-child(7) {
+            width: 80px;
+            height: 80px;
+        }
+        .circle-1:nth-child(8) {
+            width: 90px;
+            height: 90px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">CSS Transitions</div>
+        <div class="circles">
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+            <div class="circle-1"></div>
+        </div>
+    </div>
+</body>
+</html>

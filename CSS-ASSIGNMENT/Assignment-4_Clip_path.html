@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            background:url("image/bgimg.jpeg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            clip-path: polygon(50% 100%, 100% 81%, 100% 0, 0 0, 1% 75%);
+     
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 170px;
+        }
+        .nav .nav-list li {
+            display: inline-block;
+            margin: 0 10px;
+            
+        }
+        .logo{
+            font-size: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            font-weight: 700;
+            padding: 5px 20px;
+            background: transparent;
+        }
+       
+
+        .nav-list li a {
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-decoration: none;
+        }
+        .nav-list li{
+            position: relative;
+        }
+        .nav-list li a:hover{
+                 color: red;
+        }
+        .nav-list li::after{
+            content: "";
+            height: 3px;
+            width: 100%;
+            background-color: red;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 0.6s;
+            transform: scaleX(0);
+        }
+        li:hover::after{
+            transform: scaleX(1);
+        }
+        .header-main {
+            font-family: "Montserrat";
+            text-align: center;
+            padding-bottom: 150px;
+        }
+        .header-main .header-p {
+            font-size: 20px;
+            color: white;
+            font-weight: 400px;
+            margin-top: 100px;
+        }
+        .header-main .header-h2 {
+            font-size: 50px;
+            text-transform: uppercase ;
+            color: white;
+            font-weight: 800px;
+            margin-top: 20px;
+        }
+         
+        .header-main .header-p2{
+            font-size: 20px;
+            color: white;
+            width: 40%;
+            margin: 50px auto;
+            font-weight: 400;
+        }
+        .btn-1{
+            font-size: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            font-weight: 700;
+            padding: 10px 20px;
+            background: transparent;
+            position: relative;
+           margin: 100px 0;
+           margin-top: 20px;
+        }
+         .btn-1:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+
+        .btn-2 {
+            font-size: 20px;
+            display: inline-block;
+            text-decoration: none;
+            border:1px solid #fff ;
+            color: #fff;
+            font-weight: 700;
+            padding: 10px 20px;
+            background: transparent;
+            position: relative;
+            margin: 100px 0;
+            margin-top: 20px;
+        }
+         .btn-2:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                  <a href="" class="logo">Logo</a>
+                <ul class="nav-list">
+                  
+                      <li><a href="">Home</a></li>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">Portfolio</a></li>
+                      <li><a href="">Pricing</a></li>
+                      <li><a href="">Team</a></li>
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="header-main">
+                <p class="header-p">Our Clients Are Our First Priority</p>
+                <h2 class="header-h2">WELCOME TO SKY</h2>
+                <p class="header-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam praesentium 
+                    voluptas quo doloribus vel magni sit nam repellat.
+                 Qui, maiores vel. Consectetur, omnis placeat. Magni voluptatum fuga obcaecati consequuntur.</p>
+                <a href="" class="btn-1">GET STARTED NOW</a>
+                <a href="" class="btn-2">LEARN MORE</a>
+            </div>
+        </div>
+    </header>
+        
+</body>
+</html>

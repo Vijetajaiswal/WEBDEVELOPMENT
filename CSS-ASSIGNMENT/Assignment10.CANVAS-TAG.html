@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes Example</title>
+    <style>
+        canvas {
+            border: 1px solid black; /* Optional: to visualize the canvas area */
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<script>
+    // Get the canvas element and its context
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw a rectangle
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(10, 10, 100, 50);
+
+    // Draw a circle
+    ctx.beginPath();
+    ctx.arc(200, 50, 40, 0, Math.PI * 2);
+    ctx.fillStyle = 'orange';
+    ctx.fill();
+  
+
+    
+   
+</script>
+
+</body>
+</html>

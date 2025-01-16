@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: #FFA500;
+        }
+        .main{
+          position: relative;
+          height: 100vh;
+          margin: 0;
+        }
+        .box{
+          position: absolute;
+          margin-top: 230px;
+          margin-left: 550px;
+        
+       }
+       #sun-1{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+         top: 50px;
+          left: 5px;
+          background-color: #FFFF00;
+         
+          z-index: 1;
+        }
+      #sun-2{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        top:50px ;
+        bottom: 50px;
+        background-color: #f98807;
+        z-index: 2;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box" id="sun-1"></div>
+    <div class="box" id="sun-2"></div>
+    
+    </div>
+</body>
+</html>

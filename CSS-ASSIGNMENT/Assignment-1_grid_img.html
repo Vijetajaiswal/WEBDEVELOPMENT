@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contesnt="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        color: white;
+
+    }
+    .grid{
+        display: flex;
+        
+    }
+    .gallery{
+        display: grid;
+       /* grid-template-columns: repeat(3,1fr);*/
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       gap: 10px;
+       flex: 2;
+      padding: 10px;
+     
+    }
+    img{
+    height: 200px;
+    width: 270px;
+    padding: 5px;
+     display: block;
+    border-radius: 5px;
+   }
+   .side-nav {
+    flex: 1;
+    background-color: #111;
+    padding: 20px;
+    text-align: right;
+   }
+   .side-nav ul {
+    list-style: none;
+    }
+   .side-nav ul li {
+    margin: 20px 0;
+     }
+    .side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+     }
+    .side-nav ul li a:hover {
+    color: #f90;
+     }
+    .social-media a {
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+
+    }
+   .social-media a:hover {
+    color: #f90;
+    } 
+   </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="gallery">
+           <img src="image/image.avif" >
+           <img src="image/beach.jpeg">
+           <img src="image/nature-wallpapers-.jpg">
+           <img src="image/building.jpeg">
+           <img src="image/school-building-img.jpeg">
+           <img src="image/underwaterimg.jpeg">
+           <img src="image/smile-face.jpeg">
+           <img src="image/smile-with-nature.jpeg">
+           <img src="image/human-img.jpeg">
+           <img src="image/forest-graphic.jpeg">
+        </div>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="#">SHUTTER</a></li>
+                <li><a href="#">Home</a></li>
+               <li><a href="#">Photos</a></li>
+               <li><a href="#">Bio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>
